@@ -1,0 +1,9 @@
+.main_header {
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-top: none;
+    padding: 0 16px;
+}
+
+.main_header p {
+    margin: 12px 0; 
+}

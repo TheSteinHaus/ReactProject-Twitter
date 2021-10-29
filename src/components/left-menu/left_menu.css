@@ -1,0 +1,111 @@
+.left_menu {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 251px;
+    height: 612px;
+}
+
+.left_menu elements {
+    margin-bottom: 30vh;
+    width: 251px;
+}
+
+.left_menu button {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    height: 58.25px;
+    padding: 12px 30px 12px 12px;
+    align-content: center;
+    transition: ease-in-out .2s;
+}
+
+.images_menu {
+    align-self: center;
+}
+
+.left_menu button p {
+    align-self: center;
+}
+
+.left_menu button:hover {
+    background-color: rgba(118, 118, 118, 0.3);
+    border-radius: 215px;
+    transition: ease-in-out .2s;
+}
+
+.images_menu {
+    width: 26.25px;
+    height: 26.25px;
+    margin-right: 20px;
+    padding: 0;
+    transition: ease-in-out .2s;
+}
+
+.left_menu button:focus .images_menu {
+    fill: white;
+    stroke: black;
+    stroke-width: 1;
+    transition: ease-in-out .2s;
+}
+
+.left_menu .twitter .images_menu {
+    width: 30px;
+    margin-right: 0;
+}
+
+.left_menu .twitter:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.left_menu .twitter {
+    padding: 12px;
+}
+
+.left_menu button:nth-child(10) {
+    height: 52px;
+    width: 225.89px;
+    font-size: 17px;
+    margin-top: 16px;
+    background-color: #1D9BF0;
+    border-radius: 215px;
+    padding: 0 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+button .logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+button .dots {
+    display: flex;
+    width: 18.75px;
+    margin: 0 0 7.5px 50px;
+    transform: translateX(15px) translateY(4px);
+}
+
+.user_button p {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin: 0;
+}
+
+.user_button p:last-child {
+    color: #6E767D;
+}

@@ -1,0 +1,149 @@
+.right_menu {
+    height: 0;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px 64px;
+    margin-left: 30px;
+    width: 350px;
+}
+
+.right_menu > div {
+    margin-bottom: 16px;
+}
+
+.search_bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    margin-left: 16px;
+    z-index: 1;
+    background-color: black
+}
+
+.search_bar input {
+    color: white;
+    background-color: rgba(118, 118, 118, 0.35);
+    border: none;
+    border-radius: 0 215px 215px 0;
+    width: 310px;
+    height: 42px;
+    margin: 5px 0 12px;
+    outline: none;
+    font-size: 14px;
+    align-self: center;
+}
+
+.search {
+    margin: 5px 0 12px 10px;
+    width: 19px;
+    padding: 12.1px;
+    padding-left: 13px;
+    border-radius: 215px 0 0 215px;
+    background-color: rgba(118, 118, 118, 0.35);
+    align-self: center;
+}
+
+.search_bar input:focus, .search_bar input:focus svg {
+    height: 40px;
+    width: 308px;
+    border: 1px solid;
+    border-color: rgb(29, 155, 240);
+}
+
+.actual {
+    background-color: rgba(118, 118, 118, 0.2);
+    border-radius: 12px;
+}
+
+.head p {
+    padding: 0 12px 0 12px;
+    height: 0;
+}
+
+.head {
+    font-size: 20px;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.themes {
+    padding: 1px 12px;
+    transition: ease-in-out .2s;
+}
+
+.themes p:nth-child(1) {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.themes p:nth-child(2) {
+    font-size: 15px;
+}
+
+.themes:hover {
+    background-color: rgba(118, 118, 118, 0.1);
+    transition: ease-in-out .2s;
+}
+
+.who_read {
+    color: #1D9BF0;
+    padding: 0 12px 6px 12px;
+    font-size: 15px;
+}
+
+.accounts {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    width: 325px;
+    height: 72px;
+    transition: ease-in-out .2s;
+}
+
+.accounts:hover {
+    background-color: rgba(118, 118, 118, 0.1);
+    transition: ease-in-out .2s;
+}
+
+.accounts img {
+    border-radius: 215px;
+}
+
+.accounts svg {
+    width: 16.41px;
+    height: 16.41px;
+    margin-left: 2px;
+}
+
+.accounts p p:nth-child(2) {
+    color: rgb(110, 118, 125);
+    margin-top: 2px;
+}
+
+.accounts p {
+    margin: 0 0 0 5px;
+}
+
+.accounts p p {
+    display: flex;
+}
+
+.accounts button {
+    margin-left: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 215px;
+    padding: 0 16px;
+    width: 83px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo_read {
+    width: 48px;
+    height: 48px;
+}

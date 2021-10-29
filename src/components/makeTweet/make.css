@@ -1,0 +1,58 @@
+.make_tweet {
+    display: flex;
+    max-width: 572px;
+    height: auto;
+    margin: 0 auto;
+    padding: 12px;
+    align-items: flex-start;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-top: none;
+}
+
+.make_tweet_main textarea {
+    min-height: 4px;
+    height: unset;
+    overflow: hidden;
+    font-size: 20px;
+    width: 508px;
+    resize: none;
+    padding: 15px 0px 0px 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.tweet_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet_bottom div {
+    width: 100%;
+}
+
+.tweet_bottom svg {
+    width: 20px;
+    margin-right: 1%;
+    padding: 8px;
+    transition: ease-in-out .1s;
+}
+
+.tweet_bottom svg:hover {
+    background-color: rgba(29, 155, 240, 0.2);
+    border-radius: 45%;
+    transition: ease-in-out .1s;
+}
+
+.tweet_bottom button {
+    height: 34px;
+    font-size: 15px;
+    color: #7f7f7f;
+    background-color: #004979;
+    border: none;
+    border-radius: 215px;
+    padding: 0 16px;
+    margin-right: 1%;
+}

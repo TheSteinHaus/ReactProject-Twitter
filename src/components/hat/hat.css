@@ -1,0 +1,138 @@
+.hat {
+    display: flex;
+    flex-direction: column;
+    max-width: 598px;
+    height: auto;
+    margin: 0 auto;
+    align-items: flex-start;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-top: none;
+}
+
+.hat_background {
+    width: 596px;
+    height: 199px;
+}
+
+.hat p {
+    padding-left: 16px;
+    margin: 0;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+p.name_user {
+    font-size: 20px;
+    color: white;
+}
+
+.upper {
+    padding: 12px;
+    padding-bottom: 5px;
+    display: flex;
+    height: 48px;
+}
+
+.upper img {
+    width: 133.5px;
+    position: absolute;
+    transform: translateY(-90px);
+    border: 5px solid black;
+    border-radius: 215px;
+}
+
+.upper button {
+    align-self: flex-start;
+    width: 186.19px;
+    font-size: 15px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 215px;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    background-color: black;
+    color: white;
+    margin: 0 210% 12px;
+    white-space: nowrap;
+    transition: ease-in-out .2s;
+}
+
+.upper button:hover {
+    transition: ease-in-out .2s;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.regDay {
+    display: flex;
+    padding-left: 16px;
+    margin-top: 12px;
+}
+
+.regDay div {
+    display: flex;
+    margin-right: 12px;
+}
+
+.regDay svg {
+    width: 18.75px;
+    margin-right: 5px;
+    fill: rgb(110, 118, 125);
+}
+
+.regDay p {
+    padding: 0;
+}
+
+.subscribers {
+    margin: 12px 0 12px 17px;
+}
+
+.subscribers a {
+    margin-right: 16px;
+    padding: 0;
+}
+
+.subscribers a:hover {
+    border-bottom: white 1px solid;
+}
+
+.subscribers font {
+    color: rgb(110, 118, 125);
+}
+
+.down_buttons {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.down_buttons button {
+    height: 53px;
+    flex-basis: auto;
+    flex-grow: 1;
+    background-color: black;
+    color: rgb(110, 118, 125);
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+.down_buttons button:hover {
+    transition: ease-in-out .2s;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.down_buttons button:focus-within {
+    border-bottom: 3px solid rgb(29, 155, 240);
+    border-radius: 215px;
+    color: white;
+    transition: ease-in-out .2s;
+}
+
+/* .down_buttons button:focus::after {
+    display: flex;
+    content: "";
+    padding: 2px;
+    background-color: rgb(29, 155, 240);
+    border-radius: 215px;
+    width: 10vw;
+    margin: 15px 35px;
+} */
