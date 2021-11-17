@@ -13,36 +13,49 @@ import { ReactComponent as User } from './user.svg'
 import { ReactComponent as MoreCircled } from './morecircle.svg'
 import { ReactComponent as Dots } from '../dots.svg'
 
-function LeftMenu(props) {
-    return (
-        <div className="left_menu">
-            <elements>
-            <div><button className="twitter"><Twitter className="images_menu" /></button></div>
-            <Link to={'/'}> <button><Birdhouse className="images_menu" /><p>Главная</p></button> </Link>
-            <button><Hashtag className="images_menu" /><p>Обзор</p></button>
-            <button><Bell className="images_menu" /><p>Уведомления</p></button>
-            <button><Mail className="images_menu" /><p>Сообщения</p></button>
-            <button><Bookmark className="images_menu" /><p>Закладки</p></button>
-            <button><List className="images_menu" /><p>Списки</p></button>
-            <Link to={'/profile'}> <button><User className="images_menu" /><p>Профиль</p></button> </Link>
-            <button><MoreCircled className="images_menu" /><p>Еще</p></button>
-            <button>Твитнуть</button>
-            </elements>
-            <element>
-            <div>
-            <button className="user_button">
-            
-                <img src={user_logo} className="logo" />
-                <p>
-                    <p>John Smith</p>
-                    <p>@The_Man</p>
-                </p>
-                <Dots className="dots" />
-            </button>
+class LeftMenu extends React.Component {
+    
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            activeButton: 0
+        };
+    }
+    
+    render() {
+        const url = window.location.pathname
+
+        return (
+            <div className="left_menu">
+                <elements>
+                <div><button className="twitter"><Twitter className="images_menu" /></button></div>
+                <Link to={'/home'}> <button className={ url === "/home" ? "active_images" : ""}><Birdhouse className="images_menu"/><p>Главная</p></button> </Link>
+                <button><Hashtag className="images_menu" /><p>Обзор</p></button>
+                <button><Bell className="images_menu" /><p>Уведомления</p></button>
+                <button><Mail className="images_menu" /><p>Сообщения</p></button>
+                <button><Bookmark className="images_menu" /><p>Закладки</p></button>
+                <button><List className="images_menu" /><p>Списки</p></button>
+                <Link to={'/profile'}> <button className={ url === "/profile" ? "active_images" : ""}><User className="images_menu" /><p>Профиль</p></button> </Link>
+                <button><MoreCircled className="images_menu" /><p>Еще</p></button>
+                <button>Твитнуть</button>
+                </elements>
+                <element>
+                <div>
+                <button className="user_button">
+                
+                    <img src={user_logo} className="logo" />
+                    <p>
+                        <p>John Smith</p>
+                        <p>@The_Man</p>
+                    </p>
+                    <Dots className="dots" />
+                </button>
+                </div>
+                </element>
             </div>
-            </element>
-        </div>
-    );
+        );
+    }
 }
 
 export default LeftMenu;

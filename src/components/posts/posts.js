@@ -13,10 +13,9 @@ function User(props) {
       <img src={logo} className="post_logo" alt="a"></img>
         <div className="post_text">
       <p>
-        <a href="#">{props.author.name}<f className="author_gray">{props.author.nickname}</f></a>
-        <f className="author_gray">·</f>
-        <a href="#"><f className="author_gray">{props.date}</f></a>
-        {/* <img className="dots" src={dots_logo} /> */}
+        <a href="#">{props.author.name}<span className="author_gray">{props.author.nickname}</span></a>
+        <span className="author_gray">·</span>
+        <a href="#"><span className="author_gray">{props.date}</span></a>
         <p>{props.text}</p>
       </p>
       <div className="post_cymbols">

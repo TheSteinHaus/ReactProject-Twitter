@@ -47,9 +47,13 @@
     transition: ease-in-out .2s;
 }
 
-.left_menu button:focus .images_menu {
-    fill: white;
+.left_menu button {
+    outline: none;
+}
+
+.active_images {
     stroke: black;
+    fill: white;
     stroke-width: 1;
     transition: ease-in-out .2s;
 }

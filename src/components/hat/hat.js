@@ -4,8 +4,12 @@ import background from './background.jpg'
 import logo from '../posts/icon.png'
 import { ReactComponent as Balloon } from './ballon.svg'
 import { ReactComponent as Calendar } from './calendar.svg'
+import { useParams } from 'react-router-dom'
 
 function Hat(props) {
+    let { login } = useParams();
+    console.log(login);
+
     return (
         <div className="hat">
             <img src={background} className="hat_background" />
@@ -14,7 +18,7 @@ function Hat(props) {
                 <button type="submit">Настроить профиль</button>
                 
             </div>
-            <p className="name_user">TJ</p>
+            <p className="name_user">{login}</p>
             <p>@The_Man</p>
             <div className="regDay">
                 <div>
@@ -27,8 +31,8 @@ function Hat(props) {
                 </div>
             </div>
             <div className="subscribers">
-                <a href="#">21 <font>в читаемых</font></a>
-                <a href="#">2 <font>читателя</font></a>
+                <a href="#">21 <span className="readers">в читаемых</span></a>
+                <a href="#">2 <span className="readers">читателя</span></a>
             </div>
             <div className="down_buttons">
                 <button>Твиты</button>

@@ -95,7 +95,7 @@ p.name_user {
     border-bottom: white 1px solid;
 }
 
-.subscribers font {
+.readers {
     color: rgb(110, 118, 125);
 }
 
@@ -113,6 +113,7 @@ p.name_user {
     color: rgb(110, 118, 125);
     border: none;
     transition: ease-in-out .2s;
+    outline: none;
 }
 
 .down_buttons button:hover {

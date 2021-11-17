@@ -1,53 +1,73 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import './App.css';
 import User from './components/posts/posts'
 import Tweet from './components/makeTweet/make'
 import Hat from './components/hat/hat'
-import post from './components/posts/posts.json'
+import posts from './components/posts/posts.json'
 import RightMenu from './components/right_menu/right_menu';
 import Layout from './components/layout/layout';
 import LeftMenu from './components/left-menu/left_menu';
 import Header from './components/main_header/main_header';
+import Log from './components/userLogReg/log';
+import Reg from './components/userLogReg/reg';
 
 function App(props) {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact>
-          <div className="sides">
-            <Layout>
-              <LeftMenu />
-            </Layout>
-            <div className="main">
-              <Layout>
-                <Header main_text="Главная" />
-              </Layout>
-              <Tweet />
-                { [...Array(post.length)].map((item, index) => <User key={index} date={post[index].date} text={post[index].text} author={post[index].author} /> ) }
+        <Route path="/home" exact>
+          <Layout>
+            <div className="sides">
+                <LeftMenu />
+              <div className="main">
+                  <Header main_text="Главная" />
+                <Tweet />
+                  { posts.map((post) => <User date={post.date} text={post.text} author={post.author} />) }
+              </div>
+              <RightMenu />
+              
             </div>
-            <RightMenu />
-            
-          </div>
+          </Layout>
         </Route>
         
         <Route path="/profile">
-          <div className="sides">
-            <Layout>
-              <LeftMenu />
-            </Layout>
-            <div className="main">
-              <Layout>
+          <Layout>
+            <div className="sides">
+                <LeftMenu />
+              <div className="main">
                 <Header main_text="Профиль" />
-              </Layout>
-              <Hat />
+                <Hat />
+              </div>
+              <RightMenu />
+              
             </div>
-            <RightMenu />
-            
-          </div>
+          </Layout>
         </Route>
 
-        <Redirect to="/" />
+        <Route path="/login">
+          <Log />
+        </Route>
+
+        <Route path="/register">
+          <Reg />
+        </Route>
+
+        <Route path="/profile/:login">
+          <Layout>
+            <div className="sides">
+                <LeftMenu />
+              <div className="main">
+                <Header main_text="Профиль" />
+                <Hat />
+              </div>
+              <RightMenu />
+              
+            </div>
+          </Layout>
+        </Route>
+
+        <Redirect to="/home" />
       </Switch>
     </BrowserRouter>
   );
