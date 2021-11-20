@@ -32,7 +32,7 @@ class LeftMenu extends React.Component {
                 <div><button className="twitter"><Twitter className="images_menu" /></button></div>
                 <Link to={'/home'}> <button className={ url === "/home" ? "active_images" : ""}><Birdhouse className="images_menu"/><p>Главная</p></button> </Link>
                 <button><Hashtag className="images_menu" /><p>Обзор</p></button>
-                <button><Bell className="images_menu" /><p>Уведомления</p></button>
+                <Link to={'/notifications'}> <button className={ url === "/notifications" ? "active_images" : ""}><Bell className="images_menu" /><p>Уведомления</p></button> </Link>
                 <button><Mail className="images_menu" /><p>Сообщения</p></button>
                 <button><Bookmark className="images_menu" /><p>Закладки</p></button>
                 <button><List className="images_menu" /><p>Списки</p></button>

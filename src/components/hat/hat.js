@@ -2,23 +2,23 @@ import React from 'react'
 import './hat.css'
 import background from './background.jpg'
 import logo from '../posts/icon.png'
+import default_logo from './default_user.png'
 import { ReactComponent as Balloon } from './ballon.svg'
 import { ReactComponent as Calendar } from './calendar.svg'
 import { useParams } from 'react-router-dom'
 
 function Hat(props) {
-    let { login } = useParams();
-    console.log(login);
+    const { login } = useParams();
 
     return (
         <div className="hat">
             <img src={background} className="hat_background" />
             <div className="upper">
-                <img src={logo} />
+                <img src={login == undefined ? logo : default_logo} />
                 <button type="submit">Настроить профиль</button>
                 
             </div>
-            <p className="name_user">{login}</p>
+            <p className="name_user">{login == undefined ? "TJ" : login}</p>
             <p>@The_Man</p>
             <div className="regDay">
                 <div>

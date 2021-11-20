@@ -44,7 +44,7 @@
     height: 26.25px;
     margin-right: 20px;
     padding: 0;
-    transition: ease-in-out .2s;
+    transition: ease-in-out .1s;
 }
 
 .left_menu button {
@@ -55,7 +55,7 @@
     stroke: black;
     fill: white;
     stroke-width: 1;
-    transition: ease-in-out .2s;
+    transition: ease-in-out .1s;
 }
 
 .left_menu .twitter .images_menu {

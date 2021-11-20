@@ -11,6 +11,7 @@ import LeftMenu from './components/left-menu/left_menu';
 import Header from './components/main_header/main_header';
 import Log from './components/userLogReg/log';
 import Reg from './components/userLogReg/reg';
+import Users from './components/hat/users';
 
 function App(props) {
   return (
@@ -45,6 +46,20 @@ function App(props) {
           </Layout>
         </Route>
 
+        <Route path="/notifications">
+        <Layout>
+            <div className="sides">
+                <LeftMenu />
+              <div className="main">
+                <Header main_text="Уведомления" />
+                <Hat />
+              </div>
+              <RightMenu />
+              
+            </div>
+          </Layout>
+        </Route>
+
         <Route path="/login">
           <Log />
         </Route>
@@ -53,17 +68,9 @@ function App(props) {
           <Reg />
         </Route>
 
-        <Route path="/profile/:login">
+        <Route path="/user/:login">
           <Layout>
-            <div className="sides">
-                <LeftMenu />
-              <div className="main">
-                <Header main_text="Профиль" />
-                <Hat />
-              </div>
-              <RightMenu />
-              
-            </div>
+            <Users />
           </Layout>
         </Route>
 
