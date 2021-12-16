@@ -29,7 +29,7 @@
     border: none;
     border-radius: 0 215px 215px 0;
     width: 310px;
-    height: 42px;
+    height: 47px;
     margin: 5px 0 12px;
     outline: none;
     font-size: 14px;
@@ -46,12 +46,12 @@
     align-self: center;
 }
 
-.search_bar input:focus, .search_bar input:focus svg {
-    height: 40px;
+/* .search_bar input:focus, .search_bar input:focus svg {
+    height: 45px;
     width: 308px;
     border: 1px solid;
     border-color: rgb(29, 155, 240);
-}
+} */
 
 .actual {
     background-color: rgba(118, 118, 118, 0.2);

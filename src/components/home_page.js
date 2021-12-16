@@ -1,24 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import LeftMenu from './left-menu/left_menu';
 import Header from './main_header/main_header';
 import Tweet from './makeTweet/make';
-import User from './posts/posts';
 import RightMenu from './right_menu/right_menu';
-import posts from './posts/posts.json';
+import PostsComponent from './posts/postsComponent';
 
-function MainPage(props) {
-    return (
+class MainPage extends Component {
+
+    render () { return (
         <div className="sides">
             <LeftMenu />
                 <div className="main">
                     <Header main_text="Главная" />
                     <Tweet />
-                    { posts.map((post) => <User date={post.date} text={post.text} author={post.author} />) }
+                    <PostsComponent />
                 </div>
             <RightMenu />
               
         </div>
-    );
+    ); }
 }
 
 export default MainPage;

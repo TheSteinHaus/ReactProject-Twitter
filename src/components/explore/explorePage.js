@@ -2,22 +2,18 @@ import React from 'react';
 import LeftMenu from '../left-menu/left_menu';
 import Header from '../main_header/main_header';
 import RightMenu from '../right_menu/right_menu';
-import Hat from '../hat/hat';
+import Explore from './explore';
 
-function Users(props) {
-    
-
+function ExplorePage(props) {
     return (
         <div className="sides">
             <LeftMenu />
                 <div className="main">
-                    <Header main_text="Профиль" />
-                    <Hat />
-                    
+                    <Explore />
                 </div>
             <RightMenu />
         </div>
     );
 }
 
-export default Users;
+export default ExplorePage;

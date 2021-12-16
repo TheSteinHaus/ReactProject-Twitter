@@ -121,8 +121,13 @@ p.name_user {
     background-color: rgba(128, 128, 128, 0.2);
 }
 
-.down_buttons button:focus-within {
-    border-bottom: 3px solid rgb(29, 155, 240);
+.stick::after {
+    transform: translateY(18px);
+    display: flex;
+    margin: 0 auto;
+    content: "";
+    width: 80%;
+    border-bottom: 4px solid rgb(29, 155, 240);
     border-radius: 215px;
     color: white;
     transition: ease-in-out .2s;

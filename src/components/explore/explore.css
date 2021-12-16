@@ -1,0 +1,28 @@
+.explore {
+    width: 598px;
+}
+
+.search_explore {
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-top: none;
+    /* border-bottom: none; */
+    width: 596px;
+}
+
+.search_explore input {
+    width: 525px;
+}
+
+.actual_explore {
+    margin: 0;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-top: 1px solid rgba(128, 128, 128, 0.342);
+    width: 596px;
+}
+
+.actual_first {
+    display: none;
+}

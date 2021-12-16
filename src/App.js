@@ -7,6 +7,7 @@ import Reg from './components/userLogReg/reg';
 import Users from './components/profile/users';
 import MainPage from './components/home_page';
 import NotificationPage from './components/notifications/notifications_page';
+import ExplorePage from './components/explore/explorePage';
 
 function App(props) {
   return (
@@ -25,9 +26,15 @@ function App(props) {
         </Route>
 
         <Route path="/notifications">
-        <Layout>
-          <NotificationPage />
-        </Layout>
+          <Layout>
+            <NotificationPage />
+          </Layout>
+        </Route>
+
+        <Route path="/explore">
+          <Layout>
+            <ExplorePage />
+          </Layout>
         </Route>
 
         <Route path="/login">

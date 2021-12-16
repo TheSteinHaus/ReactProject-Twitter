@@ -1,0 +1,41 @@
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.user_logo {
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    border-radius: 215px;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    width: 564px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    padding: 12px 16px;
+    transition: .2s ease-in-out;
+}
+
+.notifications:hover {
+    background-color: rgba(118, 118, 118, 0.04);
+    transition: .2s ease-in-out;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color: #6E767D;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 52px;
+}
+
+.header {
+    color: #D9D9D9;
+}

@@ -2,7 +2,7 @@ a {
     text-decoration: none;
     color: white;
   }
-  
+
   .post {
     display: flex;
     max-width: 572px;
@@ -12,6 +12,12 @@ a {
     align-items: flex-start;
     border: 1px solid rgba(128, 128, 128, 0.342);
     border-top: none;
+    transition: .2s ease-in-out;
+  }
+
+  .post:hover {
+    background-color: rgba(118, 118, 118, 0.04);
+    transition: .2s ease-in-out;
   }
   
   .post_logo {
@@ -47,7 +53,8 @@ a {
     display: flex;
     flex-direction: row;
     margin-top: 4px;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 50px;
   }
   
   .images {
@@ -55,7 +62,17 @@ a {
     height: 18.75px;
     transition: ease-in-out .1s;
     padding: 8px;
-    transform: translateX(-45px);
+    /* transform: translateX(-45px); */
+  }
+
+  .img_post {
+    width: 490px;
+    padding: 12px 12px 12px 0;
+    border-radius: 20px;
+  }
+
+  .img_none {
+    display: none;
   }
 
   .img1:hover, .img4:hover, .img5:hover {
@@ -78,3 +95,19 @@ a {
     border-radius: 215px;
     transition: ease-in-out .1s;
   }
+
+  .svg_active {
+    animation: heart .3s steps(60);
+    fill: rgb(244, 28, 128);
+  }
+
+  @keyframes heart {
+    from { transform: scale(1); }
+    50% { transform: scale(0.2); }
+    to { transform: scale(1); }
+  }
+
+
+.likes_on {
+    display: none;
+}

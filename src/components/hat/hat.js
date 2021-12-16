@@ -6,11 +6,18 @@ import default_logo from './default_user.png'
 import { ReactComponent as Balloon } from './ballon.svg'
 import { ReactComponent as Calendar } from './calendar.svg'
 import { useParams } from 'react-router-dom'
+import { useState } from 'react'
+import PostsComponent from '../posts/postsComponent'
 
 function Hat(props) {
     const { login } = useParams();
 
+    const [state, setState] = useState(0);
+
     return (
+
+        <>
+
         <div className="hat">
             <img src={background} className="hat_background" />
             <div className="upper">
@@ -35,12 +42,17 @@ function Hat(props) {
                 <a href="#">2 <span className="readers">читателя</span></a>
             </div>
             <div className="down_buttons">
-                <button>Твиты</button>
-                <button>Твиты и ответы</button>
-                <button>Медиа</button>
-                <button>Нравится</button>
+                <button className={state === 0 ? "stick" : ""} onClick={() => setState(0)}>Твиты</button>
+                <button className={state === 1 ? "stick" : ""} onClick={() => setState(1)}>Твиты и ответы</button>
+                <button className={state === 2 ? "stick" : ""} onClick={() => setState(2)}>Медиа</button>
+                <button className={state === 3 ? "stick" : ""} onClick={() => setState(3)}>Нравится</button>
             </div>
         </div>
+
+        <PostsComponent post_state={ state } />
+
+        </>
+
     );
 }
 

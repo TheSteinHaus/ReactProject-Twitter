@@ -1,26 +1,17 @@
 import React from "react"
 import './right_menu.css'
-import { ReactComponent as SearchIcon } from "./search.svg"
 import { ReactComponent as Tick } from "./tick.svg"
 import user_logo from '../posts/icon.png'
 import dtf from './dtf.jpg'
 import igromania from './igromania.jpg'
 import kanobu from './kanobu.jpg'
+import { Search } from "./Search"
 
 const themes = [
     "#политика",
     "#theinternational",
     "Матвиенко",
 ]
-
-function Search(props) {
-    return (
-        <div className="search_bar">
-                <SearchIcon className="search" />
-                <input placeholder="Поиск в Твиттере" />
-        </div>
-    );
-}
 
 const accounts = [
     {
@@ -52,10 +43,10 @@ const accounts = [
 function RightMenu(props) {
     return (
         <div>
-            <Search />
+            { window.location.pathname === "/explore" ? <></> : <Search /> }
         <div className="right_menu">
             
-            <div className="actual">
+            <div className={ window.location.pathname === "/explore" ? "actual actual_first" : "actual" }>
                 <div className="head">
                     <p>Актуальные темы для вас</p>
                     <img></img>
