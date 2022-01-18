@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Новости Дня",
+        "nickname": "DailyNews",
+        "description": "Новости каждый день",
+        "registration": {
+            "day": "5",
+            "month": "ноябрь",
+            "year": "2011"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Игромир",
+        "nickname": "igromir",
+        "description": "Популярная выставка игр",
+        "registration": {
+            "day": "23",
+            "month": "февраля",
+            "year": "2013"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Близкон",
+        "nickname": "BlizzCon",
+        "description": "Другая популярная выставка",
+        "registration": {
+            "day": "11",
+            "month": "июня",
+            "year": "2012"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Новичок",
+        "nickname": "newbie",
+        "description": "Я новичок",
+        "registration": {
+            "day": "14",
+            "month": "августа",
+            "year": "2021"
+        }
+    }
+]
