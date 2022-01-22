@@ -7,7 +7,8 @@ import { ReactComponent as ShareLogo } from './share.svg'
 import { ReactComponent as AnalyseLogo } from './analyse.svg'
 import { ReactComponent as RetweetLogo } from './retweet.svg'
   
-class User extends Component{
+class User extends Component {
+
     render () { return (
         <div className={ this.props.post_class_name }>
         <img src={logo} className="post_logo" alt="a"></img>

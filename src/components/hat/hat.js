@@ -11,6 +11,7 @@ import PostsComponent from '../posts/postsComponent'
 
 function Hat(props) {
     const { login } = useParams();
+    const user = JSON.parse(localStorage.getItem('user'))
 
     const [state, setState] = useState(0);
 
@@ -25,8 +26,8 @@ function Hat(props) {
                 <button type="submit">Настроить профиль</button>
                 
             </div>
-            <p className="name_user">{login == undefined ? "TJ" : login}</p>
-            <p>@The_Man</p>
+            <p className="name_user">{user.name}</p>
+            <p>{user.nickname}</p>
             <div className="regDay">
                 <div>
                     <Balloon />

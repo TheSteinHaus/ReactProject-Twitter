@@ -10,6 +10,7 @@ import NotificationPage from './components/notifications/notifications_page';
 import ExplorePage from './components/explore/explorePage';
 
 function App(props) {
+
   return (
     <BrowserRouter>
       <Switch>
@@ -51,10 +52,14 @@ function App(props) {
           </Layout>
         </Route>
 
-        <Redirect to="/home" />
+        <Route path="/404-not-found">
+          <h1>Not found!</h1>
+        </Route>
+
+        <Redirect to='/404-not-found' />
       </Switch>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

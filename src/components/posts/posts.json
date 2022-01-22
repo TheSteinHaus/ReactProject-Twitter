@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -8,9 +9,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 2,
     "date": "25 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -18,10 +20,11 @@
       "nickname": "@The_Man",
       "avatarUrl": "logo"
     },
-    "media": true,
-    "likes": "false"
+    "media": false,
+    "likes": false
   },
   {
+    "id": 3,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -30,9 +33,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 4,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -41,9 +45,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 5,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -52,9 +57,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 6,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -63,9 +69,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 7,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -74,9 +81,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 8,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -85,9 +93,10 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   },
   {
+    "id": 9,
     "date": "14 окт.",
     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
     "author": {
@@ -96,6 +105,6 @@
       "avatarUrl": "logo"
     },
     "media": false,
-    "likes": "false"
+    "likes": false
   }
 ]
